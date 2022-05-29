@@ -1,0 +1,13 @@
+1-8. [3] Prove the correctness of the following recursive algorithm to multiply two natural numbers, for all integer constants c ≥ 2.
+
+Multiply(y, z)
+    if z = 0 then return(0) 
+    else return(Multiply(cy, ⌊z/c⌋) + y · (z mod c))
+    
+
+
+Sol:
+Induction on z. Hard part is getting rid of the ⌊z/c⌋. I attempted to do this by asserting that 
+for any a,b, a/b = ⌊a/b⌋ + (a mod b) / b. In words, if floor truncates anything, it will be the remainder (a mod b) / b.
+I think there's another formula as well that's more common with modulo arithmetic. Whatever, boring proof w/ no insight, jut an algebraic fact.
+

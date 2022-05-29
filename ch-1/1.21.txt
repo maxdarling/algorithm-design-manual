@@ -1,0 +1,11 @@
+1-21. [3] Do all the books you own total at least one million pages? How many total pages are stored in your school library?
+
+
+Ans: 
+- I own less than 100 books, and they're no more than 1000 pages on average as a very conservative estimate, which is 100k. So no. 
+
+- Library:
+    - Pages/book: Assume average paperback is 350 pages, average textbook is 1000 pages, and 2:1 distribution of paperbacks to textbooks. Thus 1700 / 3 = *566 pages/book*.
+    - # books: Assume Stanford's Green Library. It has 3 floors of pure stacks iirc. Each floor is probably 50 stacks deep and 50 wide. Each stack is 8 ft tall and 12 ft wide. So it probably has 6 shelves. Each book is 1in on average, for a total of 144 books per shelf. So we have 3 * 50 * 50 * 6 * 12 * 12 = *6.48m books!*
+    - alternative estimate: I once recall hearing that the biggest university libraries have ~10 million books. Stanford's probably up there, but it's a private university, so perhaps it's half at 5 million. Green is probably 1/5 of that, or 1 million.
+    - grand total: 6.48m books * 566 pages/book = *3.6 billion pages*

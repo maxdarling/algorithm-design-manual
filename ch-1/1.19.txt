@@ -1,0 +1,9 @@
+1-19. [3] Prove by induction that a tree with n vertices has exactly n − 1 edges.
+
+n=1
+A tree with 1 node has no edges. 
+
+Inductive step: assume true for n=k, we'll prove for k+1
+
+Take any leaf node and delete it, along with its single edge. Now we have a tree with k vertices. By the inductive hypothesis, it must have k-1 edges. Add back the deleted vertex and edge, now we have k+1 vertices and k edges. QED.  
+

@@ -1,0 +1,4 @@
+<Too annoying to write fully. Not too hard.>
+
+Tips:
+- Use the fact sum_{i=1, n} i = n(n+1)/2 to bypass the sum of squares, which is impossible to work with.

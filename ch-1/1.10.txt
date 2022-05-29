@@ -1,0 +1,21 @@
+1-10. [3] Prove the correctness of the following sorting algorithm. 
+
+Bubblesort (A)
+    for i from n to 1
+        for j from 1 to i − 1
+            if (A[j] > A[j + 1])
+                swap the values of A[j] and A[j + 1]
+
+
+Proof by induction on n:
+Inductive hypothesis: the subarray on indices [1,n] is sorted after outer loops [n,1]. 
+
+Case: n=1
+An array of size 1 is already sorted. The outer loop runs once and terminates without effect. 
+
+Inductive step: 
+Assume true for some n = k. I'll prove it's true for k+1. 
+
+We have an array of size k+1. On the first pass, the largest element, call it x, is guaranteed to end up in the last index. Why? Say x is at index z. When the index variable i=z, it must be that A[z] > A[z+1] because x is largest, so x gets swapped to index z+1. As there is no number greater than x, this will continue until the last iteration i=k, so x gets swapped to index k+1. 
+
+By the inductive hypothesis, the next [k, 1] iterations will sort the subarray on indices [1,k]. And the k+1th element is the largeset. Thus the array on indices [1,k+1] is sorted. QED.

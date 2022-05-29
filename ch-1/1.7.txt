@@ -1,0 +1,14 @@
+1-7. [5] The maximum clique problem
+
+Sol: 
+A use a high-degree hub node as a decoy, with max cliques of size 2 (itself an an edge). 
+
+
+
+     []            []
+      |           / |
+      |          /  |
+[]---[]--------[]--[]
+      |
+      |
+     []

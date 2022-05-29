@@ -1,0 +1,25 @@
+1-11. [5] Euclid's algorithm: prove that for x > y, gcd(x, y) = gcd(y, x mod y)
+
+Note: there's a different claim that gcd(x, y) = r_n where r_n is the last non-zero remainder according to an iterative division algorithm. However, that's not this. This one is a bit easier.
+
+
+Definitions:
+- a | b <-> "a divides b"
+
+Axiom: (this can be easily verified)
+- a | b, a | c -> a | (b + c), a | (b - c)
+
+Proof:
+We know that (x mod y) = x - qy for some integer quotient q.
+Let gcd(x, y) = m. Thus m | x and m | y by definition.
+Let gcd(y, x mod y) = gcd(y, x - qy) = n. Thus n | y and n | x - qy by definition.
+
+Notice m | x - qy by our axiom because m | x and m | qy. Thus since m | x - qy and m | y, 
+m <= n, because m is a divisor of these 2 numbers, but not necessarily the 'greatest' one like n.
+
+Similarly, notice n | x because n | x <-> n | (x - qy) + qy, and we know this is true 
+by our axiom since n | x - qy and n | qy. Thus n | x and n | y, so n <= m for the same reason as above.
+
+Thus n = m. QED.
+
+

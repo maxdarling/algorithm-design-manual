@@ -1,0 +1,5 @@
+1-2. [3] Show that a × b can be less than min(a, b).
+
+Sol: multiple options, such as 
+-positive numbers on (0,1). E.g. 1/2 * 1/2 = 1/4
+-postitive and negative. E.g -1 * 2 = -2

@@ -1,0 +1,14 @@
+1-5. [4] Knapsack problem counterexamples
+
+
+(a) Put the elements of S in the knapsack in left to right order if they fit, i.e. the first-fit algorithm.
+
+S = {1,2}, T = 2
+
+(b) Put the elements of S in the knapsack from smallest to largest, i.e. the best-fit algorithm.
+
+S = {1,2}, T = 2
+
+(c) Put the elements of S in the knapsack from largest to smallest.
+
+S = {2, 3, 4}, T = 5

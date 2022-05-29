@@ -1,0 +1,18 @@
+1-3. [5] Design/draw a road network with two points a and b such that the fastest route between a and b is not the shortest route.
+
+
+
+Sol: Highways vs resedential streets. 
+
+If A to B is sufficiently far, e.g. more than a couple miles, it becomes more worthwhile to pay the fixed cost of getting to and from the highway, given than the highway is far faster than the slow streets. In the limit, highway is H/S times faster, where H is highway speed (e.g. 75mph) and S is street speed (e.g. 25mph)
+
+A _____________ Slow Streets __________ B
+|                                       |
+|                                       |
+|                                       |
+|  <- get on highway (slow)             | 
+|           last mile to dest (slow) -->|
+|                                       |
+|                                       |
+| ____________ Fast Highway ____________
+
