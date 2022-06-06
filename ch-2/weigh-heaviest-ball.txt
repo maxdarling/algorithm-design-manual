@@ -1,0 +1,5 @@
+2-52. [5] You have eight balls all of the same size. Seven of them weigh the same, and one of them weighs slightly more. How can you find the ball that is heavier by using a balance and only two weighings?
+
+
+I got stuck and had to google. Makes sense! Do groups of 3, 3, and 2. Crucial to realize that you weighing 2 groups also gives information about a third
+unweighed group. A strong hint is the 3 ball problem: how to distinguish heavier ball from 3 with a single weighing? 

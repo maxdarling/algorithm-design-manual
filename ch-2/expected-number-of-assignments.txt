@@ -1,0 +1,15 @@
+2-50. [5] Consider the following algorithm to find the minimum element in an array of numbers A[0, . . . , n]. One extra variable tmp is allocated to hold the current minimum value. Start from A[0]; tmp is compared against A[1], A[2], . . . , A[N ] in order. When A[i] < tmp, tmp = A[i]. What is the expected number of times that the assignment operation tmp = A[i] is performed?
+
+
+Dope problem! I can't give a formal solution b/c I forgot all my expectation and probability knowledge. But intuition is there :)
+
+Assume the elements are all distinct and randomly shuffled. A[0] is a random choice. There's a 50% chance that any element is smaller than any other.
+
+But, let's assume that A[1] was smaller. Now we have the min on 2 elements. My intuition now tells me that we'd need to see 2 random elements in the 
+array before we'd have a 50/50 of finding a smaller element (because there's a 50% chance that the min of 2 elements is smaller than the min of another 
+2 elements). Let's say we did find a smaller element in those next 2. Now we have a min on 4 elements, and would need to see 4 before getting 
+50/50 odds of finding a smaller element, and so on. This is logarithmic. 
+
+I think the above is the core of it, but it's hard to formalize. One issue with above is that I was assuming each time that the 50/50 would go our way,
+but that's not true. The math might work out to be the same for all I know. But idk. I certainly am not super comfortable with expectation and
+probability right now.

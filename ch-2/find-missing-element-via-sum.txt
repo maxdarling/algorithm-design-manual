@@ -1,0 +1,4 @@
+An unsorted array of size n contains distinct integers between 1 and n + 1, with one element missing. Give an O(n) algorithm to find the missing integer, without using any extra space.
+
+
+Beautiful little problem. Solution is to sum. Need to know the fact that sum(i=1, n, i) = n(n+1)/2.

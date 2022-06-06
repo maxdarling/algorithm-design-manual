@@ -1,0 +1,7 @@
+2-51. [5] You are given ten bags of gold coins. Nine bags contain coins that each weigh 10 grams. One bag contains all false coins that weigh 1 gram less. You must identify this bag in just one weighing. You have a digital balance that reports the weight of what is placed on it.
+
+
+Cute, nice one.
+
+Number the bags 1-10 and use that many coins from each bag. If all were 10g, it'd be 550g total. But if bag 1 was fake, it'd be 549. If bag 2, 548, and
+so on.

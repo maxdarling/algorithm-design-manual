@@ -1,0 +1,13 @@
+Find an expression for the sum of the ith row of the following triangle, and prove its correctness. Each entry is the sum of the three entries directly above it. All non-existing entries are considered 0.
+
+                  1
+              1   1   1 
+          1   2   3   2   1 
+       1  3   6   7   6   3   1 
+    1  4  10  16  19  16  10  4  1
+  ..................................
+
+
+Cute little problem. Solver should experiment with summing the rows, notice that it's 3^i, and then try to prove why.
+The reason I came up with is that every term in a given row is used exactly 3 times in generating the row below it, so successive rows are 
+3x their previous row.
