@@ -1,7 +1,10 @@
+# testable on leetcode 4-sum https://leetcode.com/problems/4sum/
+
 def kSumOpt(self, nums, target, k):
         '''
         Return a list of all unique k-lists l = [nums[i_1], ..., nums[i_k]] 
-        for which sum(l) = target
+        for which sum(l) = target. This is a generalization of the common 
+        "3-sum" and "2-sum" leetcode problems.
 
         Recursive solution: O(n^(k-1)) (optimal)
 
@@ -30,7 +33,9 @@ def kSumOpt(self, nums, target, k):
             if (start > len(nums) - k): # early termination
                 return []
             
-            # todo: optimization - check first and last elems against target / k
+            # optimization: leverage sortedness to early exit if target sum isn't achievable
+            if not (nums[start] <= target / k and target / k <= nums[-1]):
+                return []
             
             if (k == 2): # base case
                 return self.twoSum(nums, target, start)
